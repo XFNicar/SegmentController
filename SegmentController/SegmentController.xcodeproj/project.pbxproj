@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91A1582547F556556A717E1F /* libPods-SegmentController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DCD2CA547088ACC23288AD /* libPods-SegmentController.a */; };
+		A091E2E02112C2EA0020AD21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2DF2112C2EA0020AD21 /* AppDelegate.m */; };
+		A091E2E32112C2EA0020AD21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2E22112C2EA0020AD21 /* ViewController.m */; };
+		A091E2E62112C2EA0020AD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A091E2E42112C2EA0020AD21 /* Main.storyboard */; };
+		A091E2E82112C2EA0020AD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A091E2E72112C2EA0020AD21 /* Assets.xcassets */; };
+		A091E2EB2112C2EA0020AD21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A091E2E92112C2EA0020AD21 /* LaunchScreen.storyboard */; };
+		A091E2EE2112C2EA0020AD21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2ED2112C2EA0020AD21 /* main.m */; };
+		A091E3072112C36D0020AD21 /* FLMyGoodsCouponsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2F62112C36D0020AD21 /* FLMyGoodsCouponsViewModel.m */; };
+		A091E3082112C36D0020AD21 /* FLMyGoodsCouponsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2FA2112C36D0020AD21 /* FLMyGoodsCouponsModel.m */; };
+		A091E3092112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2FD2112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.m */; };
+		A091E30A2112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2FE2112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.m */; };
+		A091E30B2112C36D0020AD21 /* FLMyGoodsCouponsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E2FF2112C36D0020AD21 /* FLMyGoodsCouponsListVC.m */; };
+		A091E30C2112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E3002112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.m */; };
+		A091E30D2112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E3062112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.m */; };
+		A091E3152112C3730020AD21 /* XFSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E3122112C3730020AD21 /* XFSegmentBar.m */; };
+		A091E3162112C3730020AD21 /* XFSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E3132112C3730020AD21 /* XFSegmentViewController.m */; };
+		A091E3172112C3730020AD21 /* XFSegmentBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A091E3142112C3730020AD21 /* XFSegmentBarButtonItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03661F00E77CCFDA4B63DFD4 /* Pods-SegmentController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentController/Pods-SegmentController.debug.xcconfig"; sourceTree = "<group>"; };
+		56F8B80699CDC94D005A7286 /* Pods-SegmentController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentController/Pods-SegmentController.release.xcconfig"; sourceTree = "<group>"; };
+		95DCD2CA547088ACC23288AD /* libPods-SegmentController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SegmentController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A091E2DB2112C2EA0020AD21 /* SegmentController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A091E2DE2112C2EA0020AD21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A091E2DF2112C2EA0020AD21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A091E2E12112C2EA0020AD21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A091E2E22112C2EA0020AD21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A091E2E52112C2EA0020AD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A091E2E72112C2EA0020AD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A091E2EA2112C2EA0020AD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A091E2EC2112C2EA0020AD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A091E2ED2112C2EA0020AD21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A091E2F62112C36D0020AD21 /* FLMyGoodsCouponsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsViewModel.m; sourceTree = "<group>"; };
+		A091E2F72112C36D0020AD21 /* FLMyGoodsCouponsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsViewModel.h; sourceTree = "<group>"; };
+		A091E2F92112C36D0020AD21 /* FLMyGoodsCouponsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsModel.h; sourceTree = "<group>"; };
+		A091E2FA2112C36D0020AD21 /* FLMyGoodsCouponsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsModel.m; sourceTree = "<group>"; };
+		A091E2FC2112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsInactiveVC.h; sourceTree = "<group>"; };
+		A091E2FD2112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsExpiredVC.m; sourceTree = "<group>"; };
+		A091E2FE2112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsUsedVC.m; sourceTree = "<group>"; };
+		A091E2FF2112C36D0020AD21 /* FLMyGoodsCouponsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsListVC.m; sourceTree = "<group>"; };
+		A091E3002112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsInactiveVC.m; sourceTree = "<group>"; };
+		A091E3012112C36D0020AD21 /* FLMyGoodsCouponsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsListVC.h; sourceTree = "<group>"; };
+		A091E3022112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsUsedVC.h; sourceTree = "<group>"; };
+		A091E3032112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsExpiredVC.h; sourceTree = "<group>"; };
+		A091E3052112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyGoodsCouponsListTVCell.h; sourceTree = "<group>"; };
+		A091E3062112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyGoodsCouponsListTVCell.m; sourceTree = "<group>"; };
+		A091E30F2112C3730020AD21 /* XFSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSegmentBar.h; sourceTree = "<group>"; };
+		A091E3102112C3730020AD21 /* XFSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSegmentViewController.h; sourceTree = "<group>"; };
+		A091E3112112C3730020AD21 /* XFSegmentBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSegmentBarButtonItem.h; sourceTree = "<group>"; };
+		A091E3122112C3730020AD21 /* XFSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSegmentBar.m; sourceTree = "<group>"; };
+		A091E3132112C3730020AD21 /* XFSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSegmentViewController.m; sourceTree = "<group>"; };
+		A091E3142112C3730020AD21 /* XFSegmentBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSegmentBarButtonItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A091E2D82112C2EA0020AD21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A1582547F556556A717E1F /* libPods-SegmentController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		547BD10D7EEC14EC91F28F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95DCD2CA547088ACC23288AD /* libPods-SegmentController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A41D226D35CD2F9AA8CF436 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03661F00E77CCFDA4B63DFD4 /* Pods-SegmentController.debug.xcconfig */,
+				56F8B80699CDC94D005A7286 /* Pods-SegmentController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A091E2D22112C2EA0020AD21 = {
+			isa = PBXGroup;
+			children = (
+				A091E2DD2112C2EA0020AD21 /* SegmentController */,
+				A091E2DC2112C2EA0020AD21 /* Products */,
+				5A41D226D35CD2F9AA8CF436 /* Pods */,
+				547BD10D7EEC14EC91F28F6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A091E2DC2112C2EA0020AD21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A091E2DB2112C2EA0020AD21 /* SegmentController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A091E2DD2112C2EA0020AD21 /* SegmentController */ = {
+			isa = PBXGroup;
+			children = (
+				A091E30E2112C3730020AD21 /* XFSegmentVC */,
+				A091E2F42112C36D0020AD21 /* MyGoodsCoupons */,
+				A091E2DE2112C2EA0020AD21 /* AppDelegate.h */,
+				A091E2DF2112C2EA0020AD21 /* AppDelegate.m */,
+				A091E2E12112C2EA0020AD21 /* ViewController.h */,
+				A091E2E22112C2EA0020AD21 /* ViewController.m */,
+				A091E2E42112C2EA0020AD21 /* Main.storyboard */,
+				A091E2E72112C2EA0020AD21 /* Assets.xcassets */,
+				A091E2E92112C2EA0020AD21 /* LaunchScreen.storyboard */,
+				A091E2EC2112C2EA0020AD21 /* Info.plist */,
+				A091E2ED2112C2EA0020AD21 /* main.m */,
+			);
+			path = SegmentController;
+			sourceTree = "<group>";
+		};
+		A091E2F42112C36D0020AD21 /* MyGoodsCoupons */ = {
+			isa = PBXGroup;
+			children = (
+				A091E2F52112C36D0020AD21 /* ViewModel */,
+				A091E2F82112C36D0020AD21 /* Models */,
+				A091E2FB2112C36D0020AD21 /* Controllers */,
+				A091E3042112C36D0020AD21 /* Views */,
+			);
+			path = MyGoodsCoupons;
+			sourceTree = "<group>";
+		};
+		A091E2F52112C36D0020AD21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A091E2F62112C36D0020AD21 /* FLMyGoodsCouponsViewModel.m */,
+				A091E2F72112C36D0020AD21 /* FLMyGoodsCouponsViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A091E2F82112C36D0020AD21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A091E2F92112C36D0020AD21 /* FLMyGoodsCouponsModel.h */,
+				A091E2FA2112C36D0020AD21 /* FLMyGoodsCouponsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A091E2FB2112C36D0020AD21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A091E2FC2112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.h */,
+				A091E2FD2112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.m */,
+				A091E2FE2112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.m */,
+				A091E2FF2112C36D0020AD21 /* FLMyGoodsCouponsListVC.m */,
+				A091E3002112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.m */,
+				A091E3012112C36D0020AD21 /* FLMyGoodsCouponsListVC.h */,
+				A091E3022112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.h */,
+				A091E3032112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A091E3042112C36D0020AD21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A091E3052112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.h */,
+				A091E3062112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A091E30E2112C3730020AD21 /* XFSegmentVC */ = {
+			isa = PBXGroup;
+			children = (
+				A091E30F2112C3730020AD21 /* XFSegmentBar.h */,
+				A091E3102112C3730020AD21 /* XFSegmentViewController.h */,
+				A091E3112112C3730020AD21 /* XFSegmentBarButtonItem.h */,
+				A091E3122112C3730020AD21 /* XFSegmentBar.m */,
+				A091E3132112C3730020AD21 /* XFSegmentViewController.m */,
+				A091E3142112C3730020AD21 /* XFSegmentBarButtonItem.m */,
+			);
+			path = XFSegmentVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A091E2DA2112C2EA0020AD21 /* SegmentController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A091E2F12112C2EA0020AD21 /* Build configuration list for PBXNativeTarget "SegmentController" */;
+			buildPhases = (
+				54D28172587C547892BCB60E /* [CP] Check Pods Manifest.lock */,
+				A091E2D72112C2EA0020AD21 /* Sources */,
+				A091E2D82112C2EA0020AD21 /* Frameworks */,
+				A091E2D92112C2EA0020AD21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SegmentController;
+			productName = SegmentController;
+			productReference = A091E2DB2112C2EA0020AD21 /* SegmentController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A091E2D32112C2EA0020AD21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = YanYi;
+				TargetAttributes = {
+					A091E2DA2112C2EA0020AD21 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A091E2D62112C2EA0020AD21 /* Build configuration list for PBXProject "SegmentController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A091E2D22112C2EA0020AD21;
+			productRefGroup = A091E2DC2112C2EA0020AD21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A091E2DA2112C2EA0020AD21 /* SegmentController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A091E2D92112C2EA0020AD21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A091E2EB2112C2EA0020AD21 /* LaunchScreen.storyboard in Resources */,
+				A091E2E82112C2EA0020AD21 /* Assets.xcassets in Resources */,
+				A091E2E62112C2EA0020AD21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54D28172587C547892BCB60E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SegmentController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A091E2D72112C2EA0020AD21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A091E2E32112C2EA0020AD21 /* ViewController.m in Sources */,
+				A091E3072112C36D0020AD21 /* FLMyGoodsCouponsViewModel.m in Sources */,
+				A091E2EE2112C2EA0020AD21 /* main.m in Sources */,
+				A091E30B2112C36D0020AD21 /* FLMyGoodsCouponsListVC.m in Sources */,
+				A091E3152112C3730020AD21 /* XFSegmentBar.m in Sources */,
+				A091E3082112C36D0020AD21 /* FLMyGoodsCouponsModel.m in Sources */,
+				A091E2E02112C2EA0020AD21 /* AppDelegate.m in Sources */,
+				A091E30D2112C36D0020AD21 /* FLMyGoodsCouponsListTVCell.m in Sources */,
+				A091E3172112C3730020AD21 /* XFSegmentBarButtonItem.m in Sources */,
+				A091E3162112C3730020AD21 /* XFSegmentViewController.m in Sources */,
+				A091E30C2112C36D0020AD21 /* FLMyGoodsCouponsInactiveVC.m in Sources */,
+				A091E3092112C36D0020AD21 /* FLMyGoodsCouponsExpiredVC.m in Sources */,
+				A091E30A2112C36D0020AD21 /* FLMyGoodsCouponsUsedVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A091E2E42112C2EA0020AD21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A091E2E52112C2EA0020AD21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A091E2E92112C2EA0020AD21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A091E2EA2112C2EA0020AD21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A091E2EF2112C2EA0020AD21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A091E2F02112C2EA0020AD21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A091E2F22112C2EA0020AD21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03661F00E77CCFDA4B63DFD4 /* Pods-SegmentController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9NZM62PV6;
+				INFOPLIST_FILE = SegmentController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanYi.SegmentController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A091E2F32112C2EA0020AD21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F8B80699CDC94D005A7286 /* Pods-SegmentController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9NZM62PV6;
+				INFOPLIST_FILE = SegmentController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YanYi.SegmentController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A091E2D62112C2EA0020AD21 /* Build configuration list for PBXProject "SegmentController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A091E2EF2112C2EA0020AD21 /* Debug */,
+				A091E2F02112C2EA0020AD21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A091E2F12112C2EA0020AD21 /* Build configuration list for PBXNativeTarget "SegmentController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A091E2F22112C2EA0020AD21 /* Debug */,
+				A091E2F32112C2EA0020AD21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A091E2D32112C2EA0020AD21 /* Project object */;
+}
