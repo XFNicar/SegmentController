@@ -43,8 +43,22 @@
     [self setBottomLineWithIndex:index];
 
 }
-
+// 改变 下划线位置
 - (void)setBottomLineWithIndex:(NSInteger)index {
+    if (self.autoTitleLine) {
+        [self setBottomLineForAutoTitleIndex:index];
+    } else {
+        [self setBottomLineForItemIndex:index];
+    }
+}
+
+// 自动调整宽度
+- (void)setBottomLineForAutoTitleIndex:(NSInteger)index {
+    
+}
+
+// 固定宽度
+- (void)setBottomLineForItemIndex:(NSInteger)index {
     [UIView animateWithDuration:0.1 animations:^{
         [self.bottomLine mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_offset(3);
@@ -62,8 +76,12 @@
     self.item_width = item_width;
     for (NSInteger index = 0; index < titles.count; index ++) {
         XFSegmentBarButtonItem *barItem = [[XFSegmentBarButtonItem alloc] initWithTitle:titles[index]
-                                                                                  index:index
-                                                                               selected:NO];
+                                                                                  index:index];
+        barItem.selectTitleColor = self.selectTitleColor;
+        barItem.selectTitleFont = self.selectTitleFont;
+        barItem.deselectTitleColor = self.deselectTitleColor;
+        barItem.deselectTitleFont = self.deselectTitleFont;
+        barItem.isSelected = NO;
         [self.segmentBarItems addObject:barItem];
         __weak XFSegmentBar *weakSelf = self;
         barItem.callBackBlock = ^(NSInteger index, NSString *title) {
@@ -88,7 +106,6 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(segmentBar:didInitBarAtDefaultIndex:)]) {
         [self.delegate segmentBar:self didInitBarAtDefaultIndex:0];
     }
-
 }
 
 

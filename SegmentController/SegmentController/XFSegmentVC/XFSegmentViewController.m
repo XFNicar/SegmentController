@@ -12,7 +12,6 @@
 
 @property (nonatomic, copy  ) NSArray           *segmentTitles;
 
-
 @end
 
 @implementation XFSegmentViewController
@@ -21,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = NO;
-    self.title = @"优惠券";
+//    self.title = @"优惠券";
     [self UIConfig];
 }
 
@@ -29,7 +28,11 @@
     [self.view addSubview:self.segmentBar];
     [self.segmentBar  mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.view);
-        make.height.mas_offset(50);
+        if (self.segmentBarHeight > 0) {
+            make.height.mas_offset(self.segmentBarHeight);
+        } else {
+            make.height.mas_offset(35);
+        }
     }];
     [self.view addSubview:self.scrollView];
     CGFloat screen_width = [UIScreen mainScreen].bounds.size.width;
@@ -99,7 +102,7 @@
         _segmentBar.deselectTitleFont   = self.deselectTitleFont;
         _segmentBar.selectTitleColor    = self.selectTitleColor;
         _segmentBar.deselectTitleColor  = self.deselectTitleColor;
-        _segmentBar.autoTitleLine       = YES;
+        _segmentBar.autoTitleLine       = NO;
         _segmentBar.showTitleLine       = YES;
         _segmentBar.delegate = self;
     }

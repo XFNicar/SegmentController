@@ -33,6 +33,8 @@
 @property (nonatomic, assign) BOOL          canScrollChildVC;
 // 默认选中位置 默认值为 0
 @property (nonatomic, assign) NSUInteger    defaultSelectIndex;
+// segmentBar 高度 默认 35
+@property (nonatomic, assign) double        segmentBarHeight;
 
 /**
  初始化 segmentVC

@@ -15,10 +15,9 @@
 
 @implementation XFSegmentBarButtonItem
 
-- (instancetype)initWithTitle:(NSString *)title index:(NSInteger)index selected:(BOOL)selected {
+- (instancetype)initWithTitle:(NSString *)title index:(NSInteger)index  {
     if (self = [super init]) {
         [self UIConfig];
-        self.isSelected = selected;
         self.index = index;
         self.title = title;
         [self.barButton setTitle:title forState:UIControlStateNormal];
@@ -36,6 +35,24 @@
 - (void)barButtonPressed:(UIButton *)sender {
     if (self.callBackBlock) {
         self.callBackBlock(self.index, self.title);
+    }
+}
+
+- (void)setIsSelected:(BOOL)isSelected {
+    if (isSelected) {
+        if (self.selectTitleColor) {
+            [self.barButton setTitleColor:self.selectTitleColor forState:UIControlStateNormal];
+        }
+        if (self.selectTitleFont) {
+            self.barButton.titleLabel.font = self.selectTitleFont;
+        }
+    } else {
+        if (self.deselectTitleColor) {
+            [self.barButton setTitleColor:self.deselectTitleColor forState:UIControlStateNormal];
+        }
+        if (self.deselectTitleFont) {
+            self.barButton.titleLabel.font = self.deselectTitleFont;
+        }
     }
 }
 
