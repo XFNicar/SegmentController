@@ -61,7 +61,9 @@
     CGFloat item_width = screen_width / titles.count;
     self.item_width = item_width;
     for (NSInteger index = 0; index < titles.count; index ++) {
-        XFSegmentBarButtonItem *barItem = [[XFSegmentBarButtonItem alloc] initWithTitle:titles[index] index:index selected:NO];
+        XFSegmentBarButtonItem *barItem = [[XFSegmentBarButtonItem alloc] initWithTitle:titles[index]
+                                                                                  index:index
+                                                                               selected:NO];
         [self.segmentBarItems addObject:barItem];
         __weak XFSegmentBar *weakSelf = self;
         barItem.callBackBlock = ^(NSInteger index, NSString *title) {
@@ -76,7 +78,8 @@
         }];
     }
     [self UIConfig];
-    [self didSelectBarAtIndex:0 title:self.segmentBarItems[0].title];
+    [self didSelectBarAtIndex:self.defaultSelectIndex
+                        title:self.segmentBarItems[self.defaultSelectIndex].title];
 
 }
 

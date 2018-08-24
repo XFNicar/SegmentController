@@ -184,10 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				A091E30F2112C3730020AD21 /* XFSegmentBar.h */,
-				A091E3102112C3730020AD21 /* XFSegmentViewController.h */,
-				A091E3112112C3730020AD21 /* XFSegmentBarButtonItem.h */,
 				A091E3122112C3730020AD21 /* XFSegmentBar.m */,
+				A091E3102112C3730020AD21 /* XFSegmentViewController.h */,
 				A091E3132112C3730020AD21 /* XFSegmentViewController.m */,
+				A091E3112112C3730020AD21 /* XFSegmentBarButtonItem.h */,
 				A091E3142112C3730020AD21 /* XFSegmentBarButtonItem.m */,
 			);
 			path = XFSegmentVC;
@@ -441,13 +441,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9NZM62PV6;
 				INFOPLIST_FILE = SegmentController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.YanYi.SegmentController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,13 +460,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9NZM62PV6;
 				INFOPLIST_FILE = SegmentController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.YanYi.SegmentController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
