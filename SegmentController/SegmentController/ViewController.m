@@ -35,7 +35,7 @@
     segmentVC.selectTitleColor = [UIColor blueColor];
     segmentVC.deselectTitleColor = [UIColor whiteColor];
     segmentVC.autoTitleLine = YES;
-    segmentVC.showTitleLine = YES;
+    segmentVC.showTitleLine = NO;
     segmentVC.childVCArray = [NSMutableArray arrayWithArray:childVCArr];
     [segmentVC setSegmentBarWithTitles:@[@"待使用",@"已使用",@"已过期"] childVCArray:childVCArr];
     UINavigationController *couponsNav = [[UINavigationController alloc]initWithRootViewController:segmentVC];

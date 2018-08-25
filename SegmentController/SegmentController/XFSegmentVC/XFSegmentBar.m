@@ -69,8 +69,10 @@ CGSize getLabelSizeForHeight(NSString *labStr , CGFloat height , UIFont *font , 
 // 改变 下划线位置
 - (void)setBottomLineWithIndex:(NSInteger)index {
     if (!self.showTitleLine) {
+        self.bottomLine.hidden = YES;
         return;
     }
+    self.bottomLine.hidden = NO;
     if (self.autoTitleLine) {
         [self setBottomLineForAutoTitleIndex:index];
     } else {
