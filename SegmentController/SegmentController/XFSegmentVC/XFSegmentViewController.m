@@ -52,7 +52,6 @@
     self.segmentTitles = titles;
     self.childVCArray = [NSMutableArray arrayWithArray:childVCArray];
     [self.segmentBar setItemBarWithTitles:titles];
-
 }
 
 #pragma mark - XFSegmentBarDelegate
@@ -102,8 +101,8 @@
         _segmentBar.deselectTitleFont   = self.deselectTitleFont;
         _segmentBar.selectTitleColor    = self.selectTitleColor;
         _segmentBar.deselectTitleColor  = self.deselectTitleColor;
-        _segmentBar.autoTitleLine       = NO;
-        _segmentBar.showTitleLine       = YES;
+        _segmentBar.autoTitleLine       = self.autoTitleLine;
+        _segmentBar.showTitleLine       = self.showTitleLine;
         _segmentBar.delegate = self;
     }
     return _segmentBar;
@@ -112,12 +111,11 @@
 - (UIScrollView *)scrollView {
     if (_scrollView == nil) {
         _scrollView = [[UIScrollView alloc]init];
-        _scrollView.scrollEnabled = YES;
+        _scrollView.scrollEnabled = self.canScrollChildVC;
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.pagingEnabled = YES;
         _scrollView.delegate = self;
-        
     }
     return _scrollView;
 }

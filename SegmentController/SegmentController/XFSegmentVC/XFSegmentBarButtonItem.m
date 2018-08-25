@@ -15,6 +15,8 @@
 
 @implementation XFSegmentBarButtonItem
 
+@synthesize isSelected = _isSelected;
+
 - (instancetype)initWithTitle:(NSString *)title index:(NSInteger)index  {
     if (self = [super init]) {
         [self UIConfig];
@@ -54,6 +56,11 @@
             self.barButton.titleLabel.font = self.deselectTitleFont;
         }
     }
+    _isSelected = isSelected;
+}
+
+- (BOOL)isSelected {
+    return _isSelected;
 }
 
 - (UIButton *)barButton {
@@ -61,6 +68,7 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         button.backgroundColor = [UIColor clearColor];
+        button.titleLabel.font = [UIFont systemFontOfSize:14];
         [button addTarget:self action:@selector(barButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
         _barButton = button;
     }
